@@ -2,6 +2,14 @@
 Mostly starting points or 
 initializations for complex quantum programs.
 
+# Quantum Autoencoder Framework
+
+This program provides a framework for building and training quantum autoencoders to perform dimensionality reduction, using quantum backpropagation and the Adam optimizer to update the parameters of the quantum circuit as the autoencoder learns from the data. It requires much customization to fit a specific use case. This framework is just a starting point, and you will need to make further changes to create a fully functional quantum autoencoder.
+
+The class takes several arguments in its constructor, such as an operator, quantum instance, optimizer, training dataset, and test dataset. The operator represents the quantum circuit that the autoencoder will use, the quantum instance is a connection to a quantum computer, optimizer is an optimizer algorithm, training dataset is the dataset used to train the autoencoder, and test dataset is the dataset used to test the autoencoder.
+
+The class also has several methods such as construct_circuit, train, test and predict. The construct_circuit method is used to build the quantum circuit based on the provided parameters, the train method is used to train the autoencoder using the quantum backpropagation algorithm, the test method is used to test the autoencoder on the test dataset, and the predict method is used to make predictions on the provided dataset.
+
 # Quantum Neural Network 4-Qubit
 
 This code creates a quantum circuit with four quantum registers (qreg_q) and four classical registers (creg_c). The circuit applies a Hadamard gate to the first qubit, applies a controlled-X gate between the first and second qubits, applies another controlled-X gate between the second and third qubits, applies a Hadamard gate to the fourth qubit, applies a barrier, and then measures all four qubits.
